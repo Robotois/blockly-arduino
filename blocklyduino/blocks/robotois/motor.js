@@ -26,13 +26,13 @@ Blockly.Blocks['motor_right'] = {
     this.setHelpUrl('http://robotois.com/docs/arduino/motor');
     this.setColour(Blockly.Blocks.motor.HUE);
     this.appendDummyInput()
-        .appendField('Motor')
+        .appendField(Blockly.Msg.ROBOTOIS_MOTOR_RIGHT)
     this.appendDummyInput()
         .appendField(new Blockly.FieldNumber(64, -100, 100), "MOTOR_SPEED");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip('Tooltip');
+    this.setTooltip(Blockly.Msg.ROBOTOIS_MOTOR_RIGHT_TIP);
   }
 };
 
@@ -41,13 +41,13 @@ Blockly.Blocks['motor_left'] = {
     this.setHelpUrl('http://robotois.com');
     this.setColour(Blockly.Blocks.motor.HUE);
     this.appendDummyInput()
-        .appendField(Blockly.Msg.ARD_MOTOR_LEFT)
+        .appendField(Blockly.Msg.ROBOTOIS_MOTOR_LEFT)
     this.appendDummyInput()
         .appendField(new Blockly.FieldNumber(64, -100, 100), "MOTOR_SPEED");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip('Tooltip');
+    this.setTooltip(Blockly.Msg.ROBOTOIS_MOTOR_LEFT_TIP);
   }
 };
 
@@ -57,7 +57,7 @@ Blockly.Blocks['motor_drive'] = {
     this.setColour(Blockly.Blocks.motor.HUE);
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField('Motors')
+        .appendField(Blockly.Msg.ROBOTOIS_MOTOR_DRIVE)
         this.appendDummyInput()
         .appendField("(");
     this.appendDummyInput()
@@ -71,6 +71,6 @@ Blockly.Blocks['motor_drive'] = {
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip('Tooltip');
+    this.setTooltip(Blockly.Msg.ROBOTOIS_MOTOR_DRIVE_TIP);
   }
 };

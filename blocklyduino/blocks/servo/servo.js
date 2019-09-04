@@ -29,23 +29,27 @@ goog.provide('Blockly.Constants.servo');
 goog.require('Blockly.Blocks');
 goog.require('Blockly');
 
+/** Common HSV hue for all blocks in this category. */
+Blockly.Constants.servo.HUE = '#334E68';
+
 //http://www.seeedstudio.com/depot/emax-9g-es08a-high-sensitive-mini-servo-p-760.html?cPath=170_171
 Blockly.Blocks['servo_move'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("Servo")
-        .appendField(new Blockly.FieldImage("./blocks/servo/servo.jpg", 64, 64))
+        .appendField(Blockly.Msg.ROBOTOIS_SERVO_DRIVE)
+        // .appendField(new Blockly.FieldImage("./blocks/servo/servo.jpg", 64, 64))
         .appendField("PIN#")
         .appendField(new Blockly.FieldDropdown(profile.default.dropdownDigital), "PIN");
     this.appendValueInput("DEGREE")
         .setCheck('Number')
         .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField("Degree (0~180)");
+        .appendField(Blockly.Msg.ROBOTOIS_SERVO_LABEL);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip('move between 0~180 degree');
     this.setHelpUrl('http://playground.arduino.cc/ComponentLib/servo');
-    this.setStyle('servo_blocks');
+    this.setColour(Blockly.Constants.servo.HUE);
+    this.setTooltip(Blockly.Msg.ROBOTOIS_SERVO_DRIVE_TIP);
   }
 };
 
@@ -53,7 +57,7 @@ Blockly.Blocks['servo_read_degrees'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Servo")
-        .appendField(new Blockly.FieldImage("./blocks/servo/servo.jpg", 64, 64))
+        // .appendField(new Blockly.FieldImage("./blocks/servo/servo.jpg", 64, 64))
         .appendField("PIN#")
         .appendField(new Blockly.FieldDropdown(profile.default.dropdownDigital), "PIN");
     this.appendDummyInput()
