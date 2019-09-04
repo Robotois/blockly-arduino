@@ -387,4 +387,9 @@
       </block>
       <block type="servo_read_degrees"></block>
     </category>
+    <category name="Robotois" categorystyle="grove_category">
+      <block type="lineSensor_read"></block>
+      <block type="motor_drive"></block>
+      <block type="ultrasonic_read"></block>
+    </category>
   </xml>
