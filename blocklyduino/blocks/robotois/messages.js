@@ -5,6 +5,9 @@ goog.provide('Blockly.Msg.robotois');
 goog.require('Blockly.Msg');
 
 // robotois messages definition
+Blockly.Msg.ROBOTOIS_RUN_SETUP = 'Inicializar:';
+Blockly.Msg.ROBOTOIS_RUN_LOOP = 'Ejecutar:';
+Blockly.Msg.ROBOTOIS_RUN_TIP = 'Define la inicialización de Arduino y el programa a ejecutar.';
 Blockly.Msg.ROBOTOIS_MOTOR_RIGHT = 'Motor derecho';
 Blockly.Msg.ROBOTOIS_MOTOR_RIGHT_TIP = 'Velocidad del motor derecho';
 Blockly.Msg.ROBOTOIS_MOTOR_LEFT = 'Motor izquierdo';

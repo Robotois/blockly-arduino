@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
   <xml id="blocklyduino" style="display: none">
     <category name="%{BKY_CATLOGIC}" categorystyle="logic_category">
+        <block type="arduino_program" deletable="false" movable="false"></block>
+
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
       <block type="logic_operation"></block>

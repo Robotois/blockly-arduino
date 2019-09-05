@@ -47,7 +47,7 @@ Blockly.Blocks['arduino_base_inout_buildin_led'] = {
 Blockly.Blocks['arduino_base_inout_digital_write'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldImage("./images/digital.jpg", 64, 64))
+       // .appendField(new Blockly.FieldImage("./images/digital.jpg", 64, 64))
 	    .appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT1)
 	    .appendField(new Blockly.FieldDropdown(profile.default.dropdownDigital), "PIN")
       	.appendField(Blockly.Msg.ARDUINO_INOUT_DIGITAL_WRITE_INPUT2)
@@ -86,7 +86,7 @@ Blockly.Blocks['arduino_base_inout_highlow'] = {
 Blockly.Blocks['arduino_base_inout_analog_write'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldImage("./images/pwm.png", 64, 64))
+        // .appendField(new Blockly.FieldImage("./images/pwm.png", 64, 64))
         .appendField(Blockly.Msg.ARDUINO_INOUT_ANALOG_WRITE_INPUT1)
         .appendField(new Blockly.FieldDropdown(profile.default.dropdownPWM), "PIN");
     this.appendValueInput("PWM", 'Number')
