@@ -68,6 +68,11 @@ Blockly.Arduino.ORDER_CONDITIONAL = 13;   // expr ? expr : expr
 Blockly.Arduino.ORDER_ASSIGNMENT = 14;    // = *= /= ~/= %= += -= <<= >>= &= ^= |=
 Blockly.Arduino.ORDER_NONE = 99;          // (...)
 
+//Added missing order
+Blockly.Arduino.ORDER_ADDITION = Blockly.Arduino.ORDER_SUBTRACTION = Blockly.Arduino.ORDER_ADDITIVE;
+Blockly.Arduino.ORDER_MULTIPLICATION = Blockly.Arduino.ORDER_DIVISION = Blockly.Arduino.ORDER_MULTIPLICATIVE;
+Blockly.Arduino.ORDER_COMMA = Blockly.Arduino.ORDER_NONE;
+Blockly.Arduino.ORDER_FUNCTION_CALL = Blockly.Arduino.ORDER_UNARY_POSTFIX;
 /**
  * List of outer-inner pairings that do NOT require parentheses.
  * @type {!Array.<!Array.<number>>}
