@@ -156,10 +156,10 @@ Blockly.Blocks['arduino_base_angle'] = {
 Blockly.Blocks['arduino_base_map'] = {
   init: function() {
     this.appendValueInput("NUM", 'Number')
-        .appendField("Map ")
+        .appendField("Mapear ")
         .setCheck('Number');
     this.appendValueInput("DMAX", 'Number')
-        .appendField("value to [0-")
+        .appendField("valor a [0-")
         .setCheck('Number');
     this.appendDummyInput()
 	      .appendField("]");
