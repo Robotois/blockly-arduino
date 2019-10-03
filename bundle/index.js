@@ -1,7 +1,7 @@
 import '../blockly/javascript_compressed.js';
 import '../blockly/msg/js/es.js';
-import '../blocklyduino/msg/blocklyduino/en.js';
-import '../blocklyduino/msg/blocks/en.js';
+import '../blocklyduino/msg/blocklyduino/es.js'; // estos son los del lenguage the ardublockly
+import '../blocklyduino/msg/blocks/es.js'; // estos son los del lenguage the ardublockly
 import '../blocklyduino/blocks/colors.js';
 import '../blocklyduino/blocks/arduino_base/arduino_base.js';
 import '../blocklyduino/blocks/grove/grove.js';
