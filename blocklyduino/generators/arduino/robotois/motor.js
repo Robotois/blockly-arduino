@@ -23,9 +23,9 @@ goog.require('Blockly.Arduino');
  * @param {!Blockly.Block} block Block to generate the code from.
  * @return {string} Completed code with order of operation.
  */
-Blockly.Arduino['motor_right'] = function(block) {
+Blockly.Arduino['motor_right'] = function (block) {
   var speed = block.getFieldValue('MOTOR_SPEED');
-  Blockly.Arduino.definitions_['motors'] =  '#include <Motors.h>';
+  Blockly.Arduino.definitions_['motors'] = '#include <Motors.h>';
   Blockly.Arduino.setups_['setup_motor_'] = 'initializeMotors();';
 
   var code = 'motorRight(' + speed + ');\n';
@@ -42,9 +42,9 @@ Blockly.Arduino['motor_right'] = function(block) {
  * @param {!Blockly.Block} block Block to generate the code from.
  * @return {string} Completed code with order of operation.
  */
-Blockly.Arduino['motor_left'] = function(block) {
+Blockly.Arduino['motor_left'] = function (block) {
   var speed = block.getFieldValue('MOTOR_SPEED');
-  Blockly.Arduino.definitions_['motors'] =  '#include <Motors.h>';
+  Blockly.Arduino.definitions_['motors'] = '#include "Motors.h"';
   Blockly.Arduino.setups_['setup_motor_'] = 'initializeMotors();';
 
   var code = 'motorLeft(' + speed + ');\n';
@@ -59,10 +59,10 @@ Blockly.Arduino['motor_left'] = function(block) {
  * @param {!Blockly.Block} block Block to generate the code from.
  * @return {string} Completed code with order of operation.
  */
-Blockly.Arduino['motor_drive'] = function(block) {
+Blockly.Arduino['motor_drive'] = function (block) {
   var speedL = block.getFieldValue('MOTOR_SPEED_LEFT');
   var speedR = block.getFieldValue('MOTOR_SPEED_RIGHT');
-  Blockly.Arduino.definitions_['motors'] =  '#include <Motors.h>';
+  Blockly.Arduino.definitions_['motors'] = '#include <Motors.h>';
   Blockly.Arduino.setups_['setup_motor_'] = 'initializeMotors();';
 
 

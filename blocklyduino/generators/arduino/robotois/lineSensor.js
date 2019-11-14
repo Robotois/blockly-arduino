@@ -23,11 +23,11 @@ goog.require('Blockly.Arduino');
  * @param {!Blockly.Block} block Block to generate the code from.
  * @return {string} Completed code with order of operation.
  */
-Blockly.Arduino['lineSensor_read'] = function(block) {
+Blockly.Arduino['lineSensor_read'] = function (block) {
   var input = block.getFieldValue('INPUT_PIN');
   var name = 'lineSensor_' + input;
-  Blockly.Arduino.definitions_['lineSensor'] =  '#include <DigitalIO.h>';
-  Blockly.Arduino.definitions_[name] = 'DigitalIO ' + name +'(' + input + ', INPUT);';
+  Blockly.Arduino.definitions_['lineSensor'] = '#include "DigitalIO.h"';
+  Blockly.Arduino.definitions_[name] = 'DigitalIO ' + name + '(' + input + ', INPUT);';
 
   var code = name + '.read()';
   return [code, Blockly.Arduino.ORDER_ATOMIC];

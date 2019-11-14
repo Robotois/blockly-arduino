@@ -23,12 +23,12 @@ goog.require('Blockly.Arduino');
  * @param {!Blockly.Block} block Block to generate the code from.
  * @return {string} Completed code with order of operation.
  */
-Blockly.Arduino['ultrasonic_read'] = function(block) {
+Blockly.Arduino['ultrasonic_read'] = function (block) {
   var trigger = block.getFieldValue('TIGGER_PIN');
   var echo = block.getFieldValue('ECHO_PIN');
   var name = 'usonic_' + trigger + '_' + echo;
-  Blockly.Arduino.definitions_['ultrasonic'] =  '#include <Ultrasonic.h>';
-  Blockly.Arduino.definitions_[name] = 'Ultrasonic ' + name +'(' + trigger + ', ' + echo + ');';
+  Blockly.Arduino.definitions_['ultrasonic'] = '#include "Ultrasonic.h"';
+  Blockly.Arduino.definitions_[name] = 'Ultrasonic ' + name + '(' + trigger + ', ' + echo + ');';
 
   var code = name + '.read()';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
