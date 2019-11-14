@@ -17,7 +17,7 @@ goog.require('Blockly.Arduino');
 
 /**
  * Code generator to read an angle value from a servo pin (X).
- * Arduino code: #include <Motors.h>
+ * Arduino code: #include "Motors.h"
  *               setup { initializeMotors(); }
  *               loop  { turnRight();  }
  * @param {!Blockly.Block} block Block to generate the code from.
@@ -25,7 +25,7 @@ goog.require('Blockly.Arduino');
  */
 Blockly.Arduino['motor_right'] = function (block) {
   var speed = block.getFieldValue('MOTOR_SPEED');
-  Blockly.Arduino.definitions_['motors'] = '#include <Motors.h>';
+  Blockly.Arduino.definitions_['motors'] = '#include "Motors.h"';
   Blockly.Arduino.setups_['setup_motor_'] = 'initializeMotors();';
 
   var code = 'motorRight(' + speed + ');\n';
@@ -36,7 +36,7 @@ Blockly.Arduino['motor_right'] = function (block) {
 
 /**
  * Code generator to read an angle value from a servo pin (X).
- * Arduino code: #include <Motors.h>
+ * Arduino code: #include "Motors.h"
  *               setup { initializeMotors(); }
  *               loop  { turnLeft();  }
  * @param {!Blockly.Block} block Block to generate the code from.
@@ -53,7 +53,7 @@ Blockly.Arduino['motor_left'] = function (block) {
 
 /**
  * Code generator to read an angle value from a servo pin (X).
- * Arduino code: #include <Motors.h>
+ * Arduino code: #include "Motors.h"
  *               setup { initializeMotors(); }
  *               loop  { drive();  }
  * @param {!Blockly.Block} block Block to generate the code from.
@@ -62,7 +62,7 @@ Blockly.Arduino['motor_left'] = function (block) {
 Blockly.Arduino['motor_drive'] = function (block) {
   var speedL = block.getFieldValue('MOTOR_SPEED_LEFT');
   var speedR = block.getFieldValue('MOTOR_SPEED_RIGHT');
-  Blockly.Arduino.definitions_['motors'] = '#include <Motors.h>';
+  Blockly.Arduino.definitions_['motors'] = '#include "Motors.h"';
   Blockly.Arduino.setups_['setup_motor_'] = 'initializeMotors();';
 
 
