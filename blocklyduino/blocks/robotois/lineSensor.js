@@ -25,24 +25,24 @@ Blockly.Blocks['lineSensor_read'] = {
    * Block for writing an angle value into a lineSensor pin.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function () {
     this.setHelpUrl('http://robotois.com/docs/arduino/lineSensor');
     this.setColour(Blockly.Blocks.lineSensor.HUE);
     this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOTOIS_LINE_SENSOR);
+      .appendField(Blockly.Msg.ROBOTOIS_LINE_SENSOR);
     this.appendDummyInput()
-        .appendField("(");
+      .appendField("(");
     this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown(profile.default.dropdownDigital), 'INPUT_PIN');
+      .appendField(new Blockly.FieldDropdown(profile.default.dropdownAnalog), 'INPUT_PIN');
     this.appendDummyInput()
-        .appendField(")");
+      .appendField(")");
     this.setInputsInline(true);
     this.setOutput(true, 'Number');
     this.setTooltip(Blockly.Msg.ROBOTOIS_LINE_SENSOR_TIP);
   },
 
   /** @return {string} The type of return value for the block, an integer. */
-  getBlockType: function() {
+  getBlockType: function () {
     return 'Number';
   },
 
@@ -50,8 +50,8 @@ Blockly.Blocks['lineSensor_read'] = {
    * Updates the content of the the pin related fields.
    * @this Blockly.Block
    */
-  updateFields: function() {
+  updateFields: function () {
     Blockly.Arduino.Boards.refreshBlockFieldDropdown(
-        this, 'INPUT_PIN', 'digitalPins');
+      this, 'INPUT_PIN', 'digitalPins');
   }
 };
