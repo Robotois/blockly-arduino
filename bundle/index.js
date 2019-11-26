@@ -12,6 +12,7 @@ import '../blocklyduino/blocks/robotois/program.js';
 import '../blocklyduino/blocks/robotois/lineSensor.js';
 import '../blocklyduino/blocks/robotois/ultrasonic.js';
 import '../blocklyduino/blocks/robotois/motor.js';
+import '../blocklyduino/blocks/robotois/random.js';
 
 import '../blocklyduino/generators/arduino.js';
 import '../blocklyduino/generators/arduino/blockly/colour.js';
@@ -32,3 +33,4 @@ import '../blocklyduino/generators/arduino/robotois/program.js';
 import '../blocklyduino/generators/arduino/robotois/lineSensor.js';
 import '../blocklyduino/generators/arduino/robotois/motor.js';
 import '../blocklyduino/generators/arduino/robotois/ultrasonic.js';
+import '../blocklyduino/generators/arduino/robotois/random.js';

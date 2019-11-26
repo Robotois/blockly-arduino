@@ -21,3 +21,5 @@ Blockly.Msg.ROBOTOIS_ULTRASONIC = "Leer el sensor de distancia usando los pines 
 Blockly.Msg.ROBOTOIS_ULTRASONIC_TIP = "Usar el sensor de distancia";
 Blockly.Msg.ROBOTOIS_LINE_SENSOR = 'Leer el sensor de linea usando el pin #';
 Blockly.Msg.ROBOTOIS_LINE_SENSOR_TIP = "Leer el sensor de linea";
+Blockly.Msg.ROBOTOIS_RANDOM_NUMBER = 'Generar numero aleatorio';
+Blockly.Msg.ROBOTOIS_RANDOM_NUMBER_TIP = 'Generar numero aleatorio';
